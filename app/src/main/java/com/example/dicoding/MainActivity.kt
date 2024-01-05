@@ -14,6 +14,7 @@ import com.example.dicoding.R
 import com.example.dicoding.demonlisr
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var rvDemon: RecyclerView
     private val list = ArrayList<demonlisr>()
     private var usingGrid = false
@@ -28,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         showRecyclerList()
 
     }
+
+
 
     private fun getListDemon(): ArrayList<demonlisr> {
         val dataName = resources.getStringArray(R.array.data_name)

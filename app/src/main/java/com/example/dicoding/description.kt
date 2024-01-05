@@ -18,29 +18,25 @@ import androidx.recyclerview.widget.RecyclerView
 
 class description : AppCompatActivity() {
     private lateinit var binding: DescriptionBinding
-    @RequiresApi(Build.VERSION_CODES.P)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.description)
         binding = DescriptionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setContentView(R.layout.description)
 
-        val dataDemon = if (Build.VERSION.SDK_INT >= 33) {
+        val dataHero = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra<demonlisr>("key_demon", demonlisr::class.java)
-
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra<Person>("key_demon")
-
-        }
-        if (dataDemon != null) {
-            binding.tvDetailName.text = dataDemon.name
-            binding.tvDetailDescription.text = dataDemon.description
-            binding.imgDetailPhoto.setImageResource(dataDemon.photo)
+            intent.getParcelableExtra<demonlisr>("key_demon")
         }
 
+        binding.tvDetailName.text = dataHero?.name!!
+        binding.tvDetailDescription.text = dataHero.description
+        binding.imgDetailPhoto.setImageResource(dataHero.photo)
     }
-
 }
+
 
 
