@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Dicoding</string>
+    <string name="heroes_name">5</string>
+    <string name="description">5</string>
+    <string name="list">5\n</string>
+    <string name="grid">5</string>
+    <string-array name="data_name">
+        <item>Avernus</item>
+        <item>Acheron</item>
+        <item>Silent Clubstep</item>
+        <item>Abyss of Darkness</item>
+        <item>Kyouki</item>
+        <item>Slaughterhouse</item>
+        <item>Codependence</item>
+        <item>Kocmoc</item>
+        <item>Firework</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Avernus became one of the most difficult levels in Geometry Dash, placing #2 on the Demonlist initially but shifted to #1 seven months later, surpassing Acheron and becoming the current hardest Demon in Geometry Dash; it is anticipated to be overtaken by Tidal Wave.</item>
+        <item>Acheron was initially placed at #2 on the Demonlist before being shifted to #1 a week later, surpassing Slaughterhouse and becoming the most difficult Demon in Geometry Dash; it was later dethroned by the shift of Avernus from #2 on October 16, 2023 after holding the position for over a year</item>
+        <item>The original version was widely considered impossible for many reasons. The inconsistency of the pre-drop prevented players from making any significant progress due to its near-frame-perfect timings and the fixed-hitbox straight-flying section.</item>
+        <item>Abyss of Darkness was first introduced to the public on January 13, 2018, when Exen uploaded a showcase of the layout. He mentioned it will be buffed to Top 1 difficulty and nerfed for balancing.</item>
+        <item>Kyouki is a 2.1 solo Extreme Demon created, verified and published by Demishio. Kyouki is the hardest fully-solo level beaten legitimately (being completely created and verified by the same player), followed by The Lightning Rod and Verdant Landscape.</item>
+        <item>Slaughterhouse is a 2.1 Extreme Demon mega-collaboration created by IcEDCave, EndLevel, river, Iris, DrCuber, CDMusic, and Brittank88, published by IcEDCave and hack-verified by spaceuk.</item>
+        <item>Codependence is the hardest dual level Geomtery Dash. The fact is this level is the only dual level top 100 in demonlist which make it very hard.</item>
+        <item>The level is heavily inspired by the former Top 1 Demon Slaughterhouse, with most of the gameplay consisting of tight, spam-based wave segments. The level\'s gameplay was entirely built by spk (formerly SpikeGMD) and later decorated by Cherry Team.</item>
+        <item>It was rated within the same day, which also triggered the rating of Slaughterhouse and arcturus. The level\'s difficulty is nearly entirely based on its use of tight timings in inventive ways.</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/avernus</item>
+        <item>@drawable/acheron</item>
+        <item>@drawable/cb</item>
+        <item>@drawable/abyss</item>
+        <item>@drawable/kyku</item>
+        <item>@drawable/platon</item>
+        <item>@drawable/cdpnc</item>
+        <item>@drawable/kcmc</item>
+        <item>@drawable/fw</item>
+    </integer-array>
+</resources>
