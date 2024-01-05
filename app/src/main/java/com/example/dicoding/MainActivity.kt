@@ -1,7 +1,9 @@
 package com.example.dicoding
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -14,6 +16,7 @@ import com.example.dicoding.demonlisr
 class MainActivity : AppCompatActivity() {
     private lateinit var rvDemon: RecyclerView
     private val list = ArrayList<demonlisr>()
+    private var usingGrid = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         rvDemon.setHasFixedSize(true)
 
         list.addAll(getListDemon())
+        showRecyclerList()
 
     }
 
@@ -60,10 +64,17 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_list -> {
-                rvDemon.layoutManager = LinearLayoutManager(this)
+                usingGrid = !usingGrid
+                if (usingGrid){
+                    rvDemon.layoutManager = GridLayoutManager(this, 2)
+                }else{
+                    rvDemon.layoutManager = LinearLayoutManager(this)
+                }
+
             }
             R.id.action_grid -> {
-                rvDemon.layoutManager = GridLayoutManager(this, 2)
+                val moveIntent = Intent(this@MainActivity, aboutme::class.java)
+                startActivity(moveIntent)
             }
         }
         return super.onOptionsItemSelected(item)

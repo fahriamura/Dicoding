@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_list"
-        android:title="@string/list"
+        android:title="Change View"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_grid"
-        android:title="@string/grid"
+        android:title="About Me"
         app:showAsAction="never"/>
 </menu>
