@@ -4,6 +4,11 @@
     <string name="description">5</string>
     <string name="list">5\n</string>
     <string name="grid">5</string>
+    <string name="splashy">10\n</string>
+    <string name="logo">10</string>
+    <string name="background">10</string>
+    <string name="splashy_subtitle">123\n</string>
+    <string name="show_splashy">20</string>
     <string-array name="data_name">
         <item>Avernus</item>
         <item>Acheron</item>
@@ -11,6 +16,7 @@
         <item>Abyss of Darkness</item>
         <item>Kyouki</item>
         <item>Slaughterhouse</item>
+        <item>Sakupen Circles</item>
         <item>Codependence</item>
         <item>Kocmoc</item>
         <item>Firework</item>
@@ -22,6 +28,7 @@
         <item>Abyss of Darkness was first introduced to the public on January 13, 2018, when Exen uploaded a showcase of the layout. He mentioned it will be buffed to Top 1 difficulty and nerfed for balancing.</item>
         <item>Kyouki is a 2.1 solo Extreme Demon created, verified and published by Demishio. Kyouki is the hardest fully-solo level beaten legitimately (being completely created and verified by the same player), followed by The Lightning Rod and Verdant Landscape.</item>
         <item>Slaughterhouse is a 2.1 Extreme Demon mega-collaboration created by IcEDCave, EndLevel, river, Iris, DrCuber, CDMusic, and Brittank88, published by IcEDCave and hack-verified by spaceuk.</item>
+        <item>Sakupen Circles (formerly known as Iron God) is a 2.1 Extreme Demon collaboration hosted by Muffy450 and verified and published by Diamond on 29 December 2021. The level is a remake of the 1.9 impossible level of the same name and takes several gameplay ideas from Iron God, an older level created by Muffy450.</item>
         <item>Codependence is the hardest dual level Geomtery Dash. The fact is this level is the only dual level top 100 in demonlist which make it very hard.</item>
         <item>The level is heavily inspired by the former Top 1 Demon Slaughterhouse, with most of the gameplay consisting of tight, spam-based wave segments. The level\'s gameplay was entirely built by spk (formerly SpikeGMD) and later decorated by Cherry Team.</item>
         <item>It was rated within the same day, which also triggered the rating of Slaughterhouse and arcturus. The level\'s difficulty is nearly entirely based on its use of tight timings in inventive ways.</item>
@@ -32,9 +39,72 @@
         <item>@drawable/cb</item>
         <item>@drawable/abyss</item>
         <item>@drawable/kyku</item>
+        <item>@drawable/maxresdefault</item>
         <item>@drawable/platon</item>
         <item>@drawable/cdpnc</item>
         <item>@drawable/kcmc</item>
         <item>@drawable/fw</item>
     </integer-array>
+    <string-array name ="creators">
+        <item>PockeWindFish</item>
+        <item>ryamu</item>
+        <item>TheReal Sailent</item>
+        <item>Exen</item>
+        <item>｛出見塩｝</item>
+        <item>icedcave</item>
+        <item>[AUF] Diamond</item>
+        <item>TCTeam</item>
+        <item>cherryteam</item>
+        <item>Trick</item>
+    </string-array>
+    <string-array name ="verifier">
+        <item>[AUF] Zoink</item>
+        <item>[AUF] Zoink</item>
+        <item>[PRIME] zoe</item>
+        <item>Cursed</item>
+        <item>｛出見塩｝</item>
+        <item>Doggie</item>
+        <item>[AUF] Diamond</item>
+        <item>Pukklez</item>
+        <item>[AUF] Zoink</item>
+        <item>Trick</item>
+    </string-array>
+
+    <string-array name ="victors">
+        <item>0</item>
+        <item>12</item>
+        <item>5</item>
+        <item>9</item>
+        <item>6</item>
+        <item>30</item>
+        <item>13</item>
+        <item>2</item>
+        <item>1</item>
+        <item>48</item>
+    </string-array>
+    <string-array name="demonName">
+        <item>Avernus</item>
+        <item>Acheron</item>
+        <item>Silent Clubstep</item>
+        <item>Abyss of Darkness</item>
+        <item>Kyouki</item>
+        <item>Slaughterhouse</item>
+        <item>Sakupen Circles</item>
+        <item>Codependence</item>
+        <item>Kocmoc</item>
+        <item>Firework</item>
+    </string-array>
+    <string-array name="history">
+        <item>Contrary to popular belief, Avernus is not an antagonist to The Golden but rather an actual sequel. The story of Avernus is that you are searching through a volcanic crater that is also called Avernus, trying to find the gates to the Underworld. This story closely resembles the one of The Golden, where you are going through a jungle searching for the golden city called El Dorado. The decoration of Avernus seems to show the volcanic crater, with the entrance to the Underworld at the very end cube with the pillars, as well as the end-screen. The plot is inspired by Roman mythology, in which it is said that the gates to the Underworld are somewhere beneath the crater Avernus, a real place. The story also makes more sense because the original name for Avernus was The Gates.</item>
+        <item>Throughout the first week of July 2021, the creators of the project would upload their part in Acheron onto YouTube. The level was unveiled to the public on 7 July 2021 on Riot\'s and IcEDCave\'s YouTube channels.</item>
+        <item>IcEDCave, a very skilled Canadian player who had made incredible runs on unnerfed Silent clubstep, came into contact with Sailent over Discord. There, they discussed the problems Silent clubstep had, such as orb masking issues, various skips, and physics problems due to 2.0 physics changes, mainly affecting vertical ship movement. Sailent agreed to update the level to fix these problems and additionally added small nerfs to the level to make it no longer impossible. The nerfs include changing timings to be possible on 60FPS and nerfing other already possible timings. They also added visibility to the \'lights-out\' parts and nerfed the first ship segment to allow players to pass it with more consistency. The level received another update a few months after the initial 2.1 update. However, this new update was relatively minor, only changing decoration and using toggle triggers to mimic orb masking in the ball originally using orb masking, as proper orb masking no longer works due to game changes.</item>
+        <item>Abyss of Darkness was first introduced to the public on January 13, 2018, when Exen uploaded a showcase of the layout. He mentioned it will be buffed to Top 1 difficulty and nerfed for balancing. Abyss of Darkness was hack-verified and released by Exen on October 27, 2018. As the level was illegitimately verified and the level was deemed too hard for any top players at the time, the level was forgotten by the community for two years. Two years after its release on July 17, 2020, a player named Dils thik began attempting to verify the level. On July 20, 2021, he crashed at 98%, marking the arguably worst fail in Geometry Dash\'s history at the time. He once again died at 98% for the second time on July 30, 2021. Around this time, Exen and CDMusic began a redecoration update of the level to ensure that it would be rate-worthy should Dils thik verify the level. However, if Dils thik verified the level before the update was complete, only finished updated parts would be included in the level, and the rest would be scrapped. On August 23, 2021, Dils thik announced through a community post on his YouTube channel that he was dropping the level due to personal issues after around 200,000 attempts. The redecoration update was completed on December 2, 2021. Afterwards, the verification of this level became a race between SpeedyMuffin, Xanii, Cursed, Trick, Yossarian, and many more, similar to Tartarus\' verification. However, on December 20, 2021, Exen announced that the verification race was canceled, and he would upload the new version to the server to prevent it from being leaked. He then made Abyss of Darkness an open-verification, and the first victor of the level would be the official verifier. Many players who attempted the level lost interest for the first two months of 2022. Trick returned to Abyss of Darkness around the first week of March 2022. He made quick progress, getting a new best run of 93% by the end of the week. On March 11, 2022, Trick achieved a personal best at the time of 95%. Around this time, Cursed returned to the level, quickly getting a run of 76%. On March 26, 2022, Cursed achieved a matching best of 95%, making the two tied for the level\'s (at the time) second-best achievement from 0%, behind Dils thik\'s 98%. On April 3, 2022, Cursed verified Abyss of Darkness after 54,315 attempts. The level was eventually placed at #1 on the Demonlist on June 13, 2022.</item>
+        <item>Opinions on the level\'s difficulty vary, while Demishio never intended the level to be Top 1, some skilled players believe it should be placed as Top 1, such as lolwut and Laniakea. The level\'s first victor, Zoink, believes it should be Top 3–4 while the second victor, Taiago, believes the level should be placed at the Top 2–3, and Trick believes that it should be placed above Slaughterhouse.</item>
+        <item>The first known video of the level was posted to YouTube on 6 July 2019. The first two previews of Slaughterhouse were posted on IcEDCave\'s YouTube channel in May-June 2020. These two previews have since been set to private by IcEDCave but were reuploaded on SKOE99\'s channel. IcEDCave took the audio for the level from a CS: GO montage, which confused people because when they tried to find the song for the level, they would find the CS: GO edit of the song, go into the comment section and spam variations of \'WHO\'S HERE FROM SLAUGHTERHOUSE!??!\', etc. This instance led to IcEDCave privatizing the two previews of the level.</item>
+        <item>Sakupen Circles was part of the player-made \'A.S.S. trilogy\', along with Abyss of Darkness and Slaughterhouse - referencing the #1 level on the Demonlist starts with the letter A and the #2 and #3 levels with the letter S. This is the first Nine Circles level to reach the top of the Demonlist after Sonic Wave back in 2017 and the second Medium length level to reach the top, after Sakupen Hell in 2016.</item>
+        <item>With freedom granted by TCTeam, Kapinapi and ViralDL applied some nerfs before the level\'s verification to make it more playable. Many people initially thought the level was impossible to beat by a single player. In April 2022, a player named Pukklez began to attempt a solo verification of Codependence. On 4 June 2023, almost three years after Codependence\'s initial verification, the level was verified solo by Pukklez after 165,000 attempts. Pukklez had used the W and Up Arrow keys for two-player control, earlier mentioned.</item>
+        <item>Upon the level\'s release by Cherry Team after Trick\'s verification, it faced criticism from top players concerning bugs, optimization, and balance. In response, Vernam, the level\'s host, released an updated version addressing several bugs. Konsi\'s part was replaced due to poor optimization, with kivvvi stepping in. Zoink later verified this revised version.</item>
+        <item>On April 7, 2019, Vernam, the leader of Cherry Team at the time, published a video on YouTube titled \"Firework is literally impossible in current state (Bad noclip and Broken sync)\", showing the first-ever preview of Firework. Vernam mentioned that the level would be decorated by Cherry Team members as the team\'s newest project. </item>
+    </string-array>
+
 </resources>

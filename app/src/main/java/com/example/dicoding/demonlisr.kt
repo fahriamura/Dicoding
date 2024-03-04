@@ -6,5 +6,6 @@ import kotlinx.parcelize.Parcelize
 data class demonlisr(
     val name: String,
     val description: String,
-    val photo: Int
+    val photo: Int,
+
 ): Parcelable

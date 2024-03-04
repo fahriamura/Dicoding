@@ -1,40 +1,49 @@
 package com.example.dicoding
 
-import com.example.dicoding.databinding.DescriptionBinding
-import android.app.Person
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.os.Parcelable
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
-import androidx.recyclerview.widget.RecyclerView
+import com.example.dicoding.databinding.DescriptionBinding
 
 class description : AppCompatActivity() {
     private lateinit var binding: DescriptionBinding
 
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DescriptionBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setContentView(R.layout.description)
 
-        val dataHero = if (Build.VERSION.SDK_INT >= 33) {
-            intent.getParcelableExtra<demonlisr>("key_demon", demonlisr::class.java)
+        val dataHero: demonlisr? = if (Build.VERSION.SDK_INT >= 33) {
+            intent.getParcelableExtra("key_demon")
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra<demonlisr>("key_demon")
+            intent.getParcelableExtra("key_demon")
         }
 
-        binding.tvDetailName.text = dataHero?.name!!
-        binding.tvDetailDescription.text = dataHero.description
-        binding.imgDetailPhoto.setImageResource(dataHero.photo)
+
+        dataHero?.let {
+            binding.tvDetailName.text = it.name
+            binding.tvDetailDescription.text = it.description
+            binding.imgDetailPhoto.setImageResource(it.photo)
+        }
+
+
+        val positionClicked: Int = intent.getIntExtra("position_clicked", -1)
+        val authorList: ArrayList<statistic>? = intent.getSerializableExtra("array") as? ArrayList<statistic>
+
+
+        if (authorList != null && positionClicked != -1 && positionClicked < authorList.size) {
+            val selectedAuthor = authorList[positionClicked]
+
+
+            binding.crt.text = selectedAuthor.creator
+            binding.ver.text = selectedAuthor.verifier
+            binding.vct.text = selectedAuthor.victor
+            binding.hs.text=selectedAuthor.history
+        }
     }
 }
 

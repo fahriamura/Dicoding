@@ -2,57 +2,210 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card_view"
+    android:id="@+id/cv"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
     card_view:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="449dp"
         android:padding="8dp">
 
         <ImageView
             android:id="@+id/img_detail_photo"
-            android:layout_width="190dp"
-            android:layout_height="126dp"
-            android:layout_marginStart="4dp"
+            android:layout_width="136dp"
+            android:layout_height="81dp"
             android:scaleType="centerCrop"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.026"
+            card_view:layout_constraintVertical_bias="0.0"
             tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/tv_detail_name"
-            android:layout_width="163dp"
-            android:layout_height="18dp"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_toEndOf="@id/img_detail_photo"
+            android:textColor="#FAFAFA"
             android:textSize="16sp"
             android:textStyle="bold"
-            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintBottom_toTopOf="@+id/table_name"
             card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="0.883"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.084"
+            card_view:layout_constraintStart_toEndOf="@+id/img_detail_photo"
+            card_view:layout_constraintTop_toTopOf="@+id/img_detail_photo"
             tools:text="@string/heroes_name" />
+
+        <TableLayout
+            android:id="@+id/table_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#D3F86B6B"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_detail_photo"
+            card_view:layout_constraintEnd_toEndOf="@+id/tv_detail_name"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_detail_name"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_detail_name">
+
+
+            <View
+                android:id="@+id/border_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/creator"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:text="Creator : " />
+
+                <TextView
+                    android:id="@+id/crt"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:text="Verifier : " />
+
+                <TextView
+                    android:id="@+id/ver"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:text="Victors : " />
+
+                <TextView
+                    android:id="@+id/vct"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start|end" />
+            </TableRow>
+
+        </TableLayout>
 
         <TextView
             android:id="@+id/tv_detail_description"
-            android:layout_width="395dp"
-            android:layout_height="529dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:background="#92FD0000"
             android:ellipsize="end"
-            android:maxLines="5"
+            android:maxLines="10"
+            android:textAlignment="textStart"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.941"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.831"
+            card_view:layout_constraintTop_toBottomOf="@+id/img_detail_photo"
+            card_view:layout_constraintVertical_bias="0.0"
             tools:text="@string/description" />
 
+        <androidx.cardview.widget.CardView
+            android:id="@id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_detail_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:padding="4dp"
+            card_view:cardBackgroundColor="#68ED0000"
+            card_view:layout_constraintBottom_toBottomOf="@id/table_name"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.941"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_detail_description"
+            card_view:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="History"
+                            android:textColor="#000000"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="#464646"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
