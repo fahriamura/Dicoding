@@ -49,7 +49,7 @@ class demon : AppCompatActivity() {
         val dataCreators = resources.getStringArray(R.array.creators)
         val dataVerifier = resources.getStringArray(R.array.verifier)
         val dataVictors = resources.getStringArray(R.array.victors)
-        val dataHistory = resources.getStringArray(R.array.history)
+        val dataHistory = resources.getStringArray(R.array.hstr)
         val listAuthor = ArrayList<statistic>()
         for (i in dataName.indices) {
             val authors = statistic(dataName[i],dataCreators[i], dataVerifier[i], dataVictors[i],dataHistory[i])

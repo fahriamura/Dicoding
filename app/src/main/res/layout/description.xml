@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cv"
     android:layout_width="match_parent"
-    android:background="@drawable/bg"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:layout_marginStart="8dp"
     android:layout_marginTop="4dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="4dp"
-    card_view:cardCornerRadius="4dp">
+    android:background="@drawable/bg"
+    android:backgroundTint="#95000000"
+    android:backgroundTintMode="src_over">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardview"
@@ -50,7 +51,8 @@
             android:id="@+id/table_name"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="#D3F86B6B"
+            android:background="#F86B6B"
+            android:paddingLeft="5dp"
             card_view:layout_constraintBottom_toBottomOf="@+id/img_detail_photo"
             card_view:layout_constraintEnd_toEndOf="@+id/tv_detail_name"
             card_view:layout_constraintStart_toStartOf="@+id/tv_detail_name"
@@ -74,14 +76,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:gravity="start"
-                    android:text="Creator : " />
+                    android:text="@string/creator"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/crt"
                     android:layout_width="400dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:gravity="start" />
+                    android:gravity="start"
+                    android:textSize="12sp" />
 
             </TableRow>
 
@@ -95,14 +99,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:gravity="start"
-                    android:text="Verifier : " />
+                    android:text="@string/verifier"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/ver"
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:gravity="start" />
+                    android:gravity="start"
+                    android:textSize="12sp" />
             </TableRow>
 
             <TableRow
@@ -115,14 +121,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:gravity="start"
-                    android:text="Victors : " />
+                    android:text="@string/victors"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/vct"
                     android:layout_width="400dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:gravity="start|end" />
+                    android:gravity="start|end"
+                    android:textSize="12sp" />
             </TableRow>
 
         </TableLayout>
@@ -132,10 +140,15 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="8dp"
-            android:background="#92FD0000"
+            android:background="#B2000000"
             android:ellipsize="end"
+            android:justificationMode="inter_word"
             android:maxLines="10"
+            android:padding="10dp"
             android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintHorizontal_bias="0.941"
@@ -151,9 +164,10 @@
             android:layout_below="@+id/tv_detail_description"
             android:layout_alignParentStart="true"
             android:layout_marginTop="16dp"
-            android:padding="4dp"
-            card_view:cardBackgroundColor="#68ED0000"
-            card_view:layout_constraintBottom_toBottomOf="@id/table_name"
+            android:background="#000000"
+            android:padding="10dp"
+            card_view:cardBackgroundColor="#7C000000"
+            card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintHorizontal_bias="0.941"
             card_view:layout_constraintStart_toStartOf="parent"
@@ -173,24 +187,19 @@
                     android:gravity="start"
                     android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginStart="16dp"
+                        android:text="@string/history"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/a"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="16dp"
-                            android:text="History"
-                            android:textColor="#000000"
-                            android:textSize="22sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
 
                 </LinearLayout>
+
 
                 <TextView
                     android:id="@+id/hs"
@@ -200,12 +209,18 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
-                    android:textColor="#464646"
+                    android:justificationMode="inter_word"
+                    android:text="Your long text here."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
                     android:textSize="14sp" />
+
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.cardview.widget.CardView>
+</ScrollView>

@@ -1,6 +1,7 @@
 package com.example.dicoding
 
 import android.os.Parcelable
+import android.service.autofill.FillEventHistory
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
@@ -10,5 +11,5 @@ data class statistic(
     val creator: String,
     val verifier: String,
     val victor: String,
-    val history: String,
+    val hstr : String,
 ): Parcelable

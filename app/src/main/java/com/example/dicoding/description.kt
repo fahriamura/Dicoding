@@ -42,7 +42,7 @@ class description : AppCompatActivity() {
             binding.crt.text = selectedAuthor.creator
             binding.ver.text = selectedAuthor.verifier
             binding.vct.text = selectedAuthor.victor
-            binding.hs.text=selectedAuthor.history
+            binding.hs.text=selectedAuthor.hstr
         }
     }
 }
